@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
     printf("%03d", msk[r]);
   }
   
-  printf("013")
+  printf("013,")
   return 0;
 }
    
