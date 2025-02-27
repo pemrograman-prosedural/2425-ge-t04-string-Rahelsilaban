@@ -4,19 +4,21 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char **argv) {
-  char msk[61];
-  int r;
+int main(int _argv, char **_argc) {
+  char string[21];
+    scanf("%20[^\n]", string);
 
-  fgets(msk, 61, stdin);
+    int length = strlen(string);
+    for (int d = 0; d < length; d++) {
+        printf("%03d", string[d]);
+    }
 
-  for (r = 0; r < strlen (msk) - 1; r++){
-    printf("%03d", msk[r]);
-  }
-  
-  printf("013,")
-  return 0;
+    printf("013");
+
+    return 0;
 }
+
+
    
 
 
