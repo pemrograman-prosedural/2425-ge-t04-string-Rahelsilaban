@@ -3,18 +3,23 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
-int main(int _argv, char **_argc) {
+int main(int argc, char **argv) {
   char msk[61];
   int j;
 
-  fgets(msk, 61, stdin); // membaca input
+  fgets(msk, 61, stdin);  // Membaca input
+  msk[strcspn(msk, "\n")] = '\0';  // Menghapus newline jika ada
 
-  for (j = 0; j < strlen (msk) - 1 ; j++){ // menampilkan ASCII dalam format tiga digit
-    printf("%03d", msk[j]);
+  for (j = 0; j < strlen(msk); j++) {
+      printf("%03d", msk[j]);  // Menampilkan karakter ASCII dalam format 3 digit
   }
+  
+  printf("\013"); 
 
   return 0;
-} 
+}
+   
+
+
 
