@@ -1,0 +1,3 @@
+sebelumnya pada t04_01 saya memakai loopingan for namun saya menggantinya menjadi loopingan 
+while karena menurut saya lebih fleksibel.
+kami telah menyelesaikan t04_01 dan t04_02
