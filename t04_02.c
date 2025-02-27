@@ -6,16 +6,13 @@
 
 int main(int argc, char **argv) {
   char msk[61];
-  int j;
+  int r;
 
-  fgets(msk, 61, stdin);  // Membaca input
-  msk[strcspn(msk, "\n")] = '\0';  // Menghapus newline jika ada
+  fgets(msk, 61, stdin);
 
-  for (j = 0; j < strlen(msk); j++) {
-      printf("%03d", msk[j]);  // Menampilkan karakter ASCII dalam format 3 digit
+  for (r = 0; r < strlen (msk) - 1; r++){
+    printf("%03d", msk[r]);
   }
-  
-  printf("\013"); 
 
   return 0;
 }
