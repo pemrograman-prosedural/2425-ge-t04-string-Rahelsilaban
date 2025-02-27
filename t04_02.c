@@ -13,7 +13,8 @@ int main(int argc, char **argv) {
   for (r = 0; r < strlen (msk) - 1; r++){
     printf("%03d", msk[r]);
   }
-
+  
+  printf("013")
   return 0;
 }
    
